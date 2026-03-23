@@ -41,7 +41,7 @@ st.success(f"(remove_name) e premahnato!")
 st.header("Gallery")
 if st.session_state.animals:
   cols = st.colums(3)
-  for idx, animal is enumerate(st.session_state.animals):
+  for idx, animal in enumerate(st.session_state.animals):
       with cols[idx % 3]:
         st.subheader(animal["name"])
         st.image(animal["photo"], use_column_with=True)
