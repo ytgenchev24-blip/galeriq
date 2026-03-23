@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Gallery from favourite animals")
 
 if "animals" not in st.session_state:
-  st.session.state_animals = []
+  st.session_state.animals = []
 
 st.header("Add animal")
 name = st.text_input("Name")
